@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>SMAN RIKI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+html{scroll-behavior:smooth}
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://picsum.photos/1600/900?school");
+background-size:cover;
+color:white;
+}
+.card{transition:.3s;cursor:pointer}
+.card:hover{transform:translateY(-10px);box-shadow:0 10px 20px rgba(0,0,0,.3)}
+section{padding-top:80px}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold">SMAN RIKI</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#galeri">Foto</a></li>
+<li class="nav-item"><a class="nav-link" href="#eskul">Eskul</a></li>
+<li class="nav-item"><a class="nav-link" href="#jurusan">Jurusan</a></li>
+<li class="nav-item"><a class="nav-link" href="#ppdb">PPDB</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero d-flex align-items-center text-center">
+<div class="container">
+<h1 class="display-4 fw-bold">SMAN RIKI</h1>
+<p>Sekolah Unggul & Berprestasi</p>
+<a href="#ppdb" class="btn btn-warning btn-lg">Daftar PPDB</a>
+</div>
+</section>
+
+<!-- GALERI -->
+<section id="galeri" class="container">
+<h3 class="text-center mb-4">Galeri Sekolah</h3>
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><img src="https://picsum.photos/900/400?1" class="d-block w-100"></div>
+<div class="carousel-item"><img src="https://picsum.photos/900/400?2" class="d-block w-100"></div>
+<div class="carousel-item"><img src="https://picsum.photos/900/400?3" class="d-block w-100"></div>
+</div>
+<button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+<button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+</div>
+</section>
+
+<!-- ESKUL -->
+<section id="eskul" class="bg-light">
+<div class="container">
+<h3 class="text-center mb-4">Ekstrakurikuler</h3>
+<div class="row g-4">
+
+<div class="col-md-4"><div class="card" data-bs-toggle="modal" data-bs-target="#futsal"><img src="https://picsum.photos/400/300?4"><div class="card-body text-center">Futsal</div></div></div>
+<div class="col-md-4"><div class="card" data-bs-toggle="modal" data-bs-target="#badminton"><img src="https://picsum.photos/400/300?5"><div class="card-body text-center">Badminton</div></div></div>
+<div class="col-md-4"><div class="card" data-bs-toggle="modal" data-bs-target="#paskibra"><img src="https://picsum.photos/400/300?6"><div class="card-body text-center">Paskibra</div></div></div>
+
+</div>
+</div>
+</section>
+
+<!-- JURUSAN -->
+<section id="jurusan">
+<div class="container">
+<h3 class="text-center mb-4">Program Keahlian</h3>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card p-4 text-center" data-bs-toggle="modal" data-bs-target="#tkj">
+<h5>TKJ</h5>
+<p>Teknik Komputer & Jaringan</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-center" data-bs-toggle="modal" data-bs-target="#akl">
+<h5>AKL</h5>
+<p>Akuntansi Keuangan Lembaga</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-center" data-bs-toggle="modal" data-bs-target="#tkr">
+<h5>TKR</h5>
+<p>Teknik Kendaraan Ringan</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PPDB -->
+<section id="ppdb" class="bg-primary text-white text-center py-5">
+<div class="container">
+<h2>PPDB 2026</h2>
+
+<p>
+📌 Jalur: Zonasi / Prestasi / Afirmasi<br>
+📅 Pendaftaran: 1 Mei – 30 Juni 2026<br>
+💰 Biaya: Gratis<br>
+📄 Syarat: KK, Akta, Ijazah SMP
+</p>
+
+<form class="row g-3 justify-content-center mt-3">
+<div class="col-md-4"><input class="form-control" placeholder="Nama Lengkap"></div>
+<div class="col-md-4"><input class="form-control" placeholder="Asal SMP"></div>
+<div class="col-md-4"><input class="form-control" placeholder="No HP"></div>
+<div class="col-md-6"><button class="btn btn-light w-100">Daftar Sekarang</button></div>
+</form>
+
+</div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+Jl Pendidikan No 88 Bandung<br>
+Telp: 0819-5566-7788
+</footer>
+
+<!-- MODAL DETAIL JURUSAN -->
+
+<div class="modal fade" id="tkj"><div class="modal-dialog"><div class="modal-content p-4">
+<h4>TKJ</h4>
+<p>Belajar jaringan komputer, server, web, dan IT support.</p>
+<p>✔ Lab komputer<br>✔ Peluang kerja IT Support / Network Admin</p>
+<button class="btn btn-primary">Daftar Jurusan</button>
+</div></div></div>
+
+<div class="modal fade" id="akl"><div class="modal-dialog"><div class="modal-content p-4">
+<h4>AKL</h4>
+<p>Fokus akuntansi, administrasi keuangan, dan perpajakan.</p>
+<p>✔ Praktikum akuntansi<br>✔ Peluang kerja staf keuangan</p>
+<button class="btn btn-primary">Daftar Jurusan</button>
+</div></div></div>
+
+<div class="modal fade" id="tkr"><div class="modal-dialog"><div class="modal-content p-4">
+<h4>TKR</h4>
+<p>Belajar mesin mobil, servis, dan kelistrikan kendaraan.</p>
+<p>✔ Bengkel praktik<br>✔ Peluang kerja mekanik</p>
+<button class="btn btn-primary">Daftar Jurusan</button>
+</div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
